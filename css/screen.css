@@ -1,0 +1,94 @@
+#site-footer {
+	position:relative;
+	background-color:white;
+	height:425px;
+	margin-bottom:2em;
+}
+#contact-me {
+	width:450px;
+	top:0;
+	left:0;
+	height:425px;
+	position:absolute;
+}
+#form-container {
+	top:0;
+	right:0;
+	width:450px;
+	height:425px;
+	position:absolute;
+	background-color:#1A1A1A;	
+}
+#hire-me {
+	padding:5em 1.75em 1.75em 1.75em;
+}
+
+#hire-me h1 {
+	font-family:JosefinSlabBold;
+	font-size:1.5em;
+	color:#1A1A1A;
+}
+#hire-me p {
+	font-family:SofiaProLight, sans-serif;
+	font-size:1em;
+	color:#1A1A1A;
+}
+#contact-form {
+	padding-top:1.5em;
+}
+
+#form2{
+		color:#fff;
+		}		
+#form2 fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		background:#1A1A1A url(../images/form2/form_top.gif) repeat-x;		
+		padding-bottom:1em;
+		}		
+#form2 p{margin:.5em 2em;}	
+#form2 input, #form2 textarea{		
+		width:372px;
+		border:1px solid #111;
+		background:#282828 url(../images/form2/form_input.gif) repeat-x;
+		padding:5px 3px;
+		color:#fff;
+		}		
+#form2 textarea{
+		height:135px;
+		overflow:auto;
+		resize: none;
+		}					
+#form2 p.submit{
+		text-align:center;
+		}	
+#form2 button{
+		padding:.5em 2em;
+		background-color:#d34028; 
+			background-image: linear-gradient(bottom, rgb(211,63,40) 21%, rgb(235,84,61) 80%);
+			background-image: -o-linear-gradient(bottom, rgb(211,63,40) 21%, rgb(235,84,61) 80%);
+			background-image: -moz-linear-gradient(bottom, rgb(211,63,40) 21%, rgb(235,84,61) 80%);
+			background-image: -webkit-linear-gradient(bottom, rgb(211,63,40) 21%, rgb(235,84,61) 80%);
+			background-image: -ms-linear-gradient(bottom, rgb(211,63,40) 21%, rgb(235,84,61) 80%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.21, rgb(211,63,40)),
+				color-stop(0.8, rgb(235,84,61)));
+		color:#fff;
+		cursor:pointer;		
+		text-align:center;	
+		border:.75px solid;
+		border-radius:25px;
+		border-color:#282828;
+		font-size:1em;
+		}	
+#form2 label {
+		font-size:1em; 	
+		font-family:SofiaProLight, sans-serif;
+		margin-bottom:2px;
+		display:block;
+	}
