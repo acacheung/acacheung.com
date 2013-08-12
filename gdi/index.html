@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Girl Develop It - Intro HTML and CSS</title>
+	<meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+	<link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" >
+  <link rel="stylesheet" id='style-theme-link' href="dist/code-blocks.css" type="text/css" >
+
+	<script src='dist/jquery.min.js'></script>
+	<script src="dist/modernizr.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<p>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script>
+
+<article class='slide slide-subhead'>
+  <h1>Intro to HTML &amp; CSS</h1>
+  <h2>Amanda Cheung</h2>
+</article>
+
+<article class = 'slide'>
+  <h2>Order of Business</h2>
+  <p>Welcome</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Order of Business</h2>
+  <p>Welcome</p>
+  <p>Introductions - Who are you? What do you hope to get out of the class?</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Order of Business</h2>
+  <p>Welcome</p>
+  <p>Introductions - Who are you? What do you hope to get out of the class?</p>
+  <p>Let's get started!</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Goals</h2>
+  <p>Get you comfortable with the basics</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Goals</h2>
+  <p>Get you comfortable with the basics</p>
+  <p>There's a lot to learn! HTML, CSS, javascript, design layout fundamentals, typography, user interface (UI), content strategy, search engine optimization (SEO), and more!</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Goals</h2>
+  <p>Get you comfortable with the basics</p>
+  <p>There's a lot to learn! HTML, CSS, javascript, design layout fundamentals, typography, user interface (UI), content strategy, search engine optimization (SEO), and more!</p>
+  <p>For now, let's talk HTML and CSS</p>
+</article>
+
+<article class = 'slide'>
+  <h2>What is HTML?</h2>
+  <p>Stands for Hypertext Markup Language</p>
+  <p>Invented by Tim Berners-Lee in 1991 to share scientific papers</p>
+  <p>The structure: Semantics, content, data</p>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Amanda's Awesome Site</title>
+    </head>
+    <body>
+      <header>
+        <h1>My Site!</h1>
+        <nav><ul>
+          <li><a href='#'>About me</a></li>
+          <li><a href='#'>Contact</a></li>
+        </ul></nav>
+      </header>
+      <section class='main'>
+        <article class='blog-post'>
+          <h3>Blog Post 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+        </article>
+      </section>
+    </body>
+  </html>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>Tags</h2>
+  <p>HTML tags usually come in pairs (start tag and end tag / open tag and close tag)</p>
+  <br />
+  <p>Except for ones that cannot be contain other elements (ex: <span class='html-code'>&lt;br/&gt;</span>, <span class='html-code'>&lt;img/&gt;</span>)</p>
+  <br />
+  <p>Opening tag: <span class='html-code'>&lt;p&gt;</span> left-angle bracket, character, right-angle bracket</p>
+  <p>Closing tag: <span class='html-code'>&lt;/p&gt;</span> left-angle bracket, forward slash, character, right-angle bracket</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Tags</h2>
+  <p>Tells the browser about your content</p>
+  <br />
+  <p><span class='html-code'>&lt;html&gt;</span> describes the web page, meta info</p>
+  <p><span class='html-code'>&lt;body&gt;</span> visible page content</p>
+  <p><span class='html-code'>&lt;header&gt;</span> header content: logo, nav, search, login</p>
+  <p><span class='html-code'>&lt;footer&gt;</span> footer content: related links, copyright</p>
+  <p><span class='html-code'>&lt;div&gt;</span> defines a division or a section, a container/wrapper</p>
+  <p><span class='html-code'>&lt;nav&gt;</span> navigational content: links to other pages or parts within a page</p>
+  <p><span class='html-code'>&lt;aside&gt;</span> content related to its surrounding content, sidebar</p>
+  <p><span class='html-code'>&lt;section&gt;</span> defines a section</p>
+  <p><span class='html-code'>&lt;article&gt;</span> a self-contained piece of content. Ex: forum post, a magazine/newspaper article, a blog entry</p>
+</article>
+
+<article class = 'slide'>
+  <h2>More Tags</h2>
+  <p><span class='html-code'>&lt;p&gt;</span> paragraph text</p>
+  <p><span class='html-code'>&lt;h1&gt;</span> heading</p>
+  <p><span class='html-code'>&lt;h2&gt;</span> heading less important than h1</p>
+  <p><span class='html-code'>&lt;span&gt;</span> groups inline-elements together</p>
+  <p><span class='html-code'>&lt;ul&gt;</span> unordered list</p>
+  <p><span class='html-code'>&lt;ol&gt;</span> ordered list</p>
+  <p><span class='html-code'>&lt;li&gt;</span> list item</p>
+  <p><span class='html-code'>&lt;a&gt;</span> link, a stands for anchor</p>
+  <p><span class='html-code'>&lt;em&gt;</span> and <span class='html-code'>&lt;strong&gt;</span> are used for emphasis, but DO NOT tie styles to your html structure. Is what you are highlighting semantically more important or do you just want to bold/italicize for appearance?</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Attributes</h2>
+  <p>HTML elements can have attributes</p>
+  <p>Attributes are always specified in the start tag</p>
+  <p><span class='html-code'>&lt;element name = 'value'&gt;</span></p>
+  <p><span class='html-code'>&lt;a href = 'http://dockyard.com/'&gt;</span> Link to Homepage <span class='html-code'>&lt;/a&gt;</span></p>
+  <p>Common attributes: class, id, href (stands for hypertext reference), src</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Chop this site</h2>
+  <img src='images/slashdot.jpg'>
+</article>
+
+<article class = 'slide'>
+  <h2>Chop this site</h2>
+  <img src='images/slashdot2.jpg'>
+</article>
+
+<article class = 'slide'>
+  <h2>Chop this site</h2>
+  <img src='images/bostinno.jpg'>
+</article>
+
+<article class = 'slide'>
+  <h2>Chop this site</h2>
+  <img src='images/bostinno2.jpg'>
+</article>
+
+<article class = 'slide'>
+  <h2>Let's practice chopping some more sites!</h2>
+  <a href='http://littlelines.com/'>Little Lines</a>
+  <br />
+  <a href='http://jessicahische.is/aflorencefan'>Jessica Hische</a>
+</article>
+
+<article class = 'slide'>
+  <h2>Relative vs. absolute paths</h2>
+  <p>Used for links and images</p>
+  <p>Relative paths are linked relative to where the file is. Links with no path info are found in the same directory. Subdirectories are listed without preceding slashes.</p>
+  <p>Absolute paths are linked explicitly. Refer to a specific location of a file, including the domain. Must use absolute paths when linking externally.</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Images</h2>
+  <p>Have three components: the image element tag, the src attribute and the alt attribute (to be W3C compliant)</p>
+  <p>Images are self-closing elements and DO NOT need a closing tag. Images cannot contain any other elements.</p>
+  <p><span class='html-code'>&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/&gt;</span></p>
+  <img class='gdi-logo' src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+</article>
+
+<article class = 'slide'>
+  <h2>Images</h2>
+  <p>Have three components: the image element tag, the src attribute and the alt attribute (to be W3C compliant)</p>
+  <p>Images are self-closing elements and DO NOT need a closing tag. Images cannot contain any other elements.</p>
+  <p><span class='html-code'>&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/&gt;</span></p>
+  <img class='gdi-logo' src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+  <p>What kind of path is the image source?</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Link Break</h2>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <p>Lo-fi incididunt anim polaroid. Pug swag brunch, id ennui Neutra voluptate non ugh YOLO trust fund synth hashtag shabby chic duis. Austin asymmetrical id DIY. Chillwave whatever do single-origin coffee, ullamco incididunt pickled you probably haven't heard of them Austin aesthetic gastropub ethnic. Kale chips bespoke pug before they sold out church-key. Reprehenderit gluten-free officia ethnic cardigan. Tumblr single-origin coffee ea fanny pack mumblecore Godard, biodiesel craft beer Brooklyn artisan small batch Pinterest selvage.</p>
+  </html>
+  </textarea>
+</article>
+
+<article class = 'slide'>
+  <h2>Unordered and ordered lists</h2>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ol>
+
+  </html>
+  </textarea>
+</article>
+
+<article class = 'slide'>
+  <h2>Unordered and ordered lists</h2>
+  <p>Where could lists be used <a href='http://superreal.de/en/Projects/' target='_blank'>here</a>?</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Let's practice our HTML</h2>
+  <p>Copy <a href='http://www.sockpanda.com' target='_blank'>SockPanda.com</a></p>
+  <p>Pay attention to how you want to nest your elements.</p>
+  <p>Reflect the nesting into how your code is organized. It will make it easier to read.</p>
+  <p>Use a <a href='http://validator.w3.org/' target='_blank'>validator</a>!</p>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+  </html>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>Comments</h2>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <h1>This is a heading</h1>
+    <!-- This is a comment -->
+
+    <!-- A multi-line
+      comment
+      yay
+    -->
+  </html>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>Tables</h2>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <table>
+      <tr>
+        <th>Head</th>
+        <th>Head</th>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </table>
+  </html>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>Character ascii codes</h2>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    &amp;
+  </html>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>What is CSS?</h2>
+  <p>Cascading Style Sheets</p>
+  <p>The presentation: Layout, styling</p>
+  <textarea class='coder-editor'>
+  <header>
+    <h1>My Site!</h1>
+    <nav>
+      <a href='#'>Link 1</a>
+      <br />
+      <a href='#'>Link 2</a>
+    </nav>
+  </header>
+  <section class='main'>
+    <article class='blog-post'>
+      <h1>Blog Post 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    </article>
+  </section>
+  <footer>
+    <a href='#'>Link 1</a> | <a href='#'>Link 2</a>
+  </footer>
+
+  <style>
+    a {
+      color: salmon;
+    }
+    p {
+      color: purple;
+    }
+    h1 {
+      color: orange;
+      background-color: teal;
+    }
+    .blog-post{
+      background-color: beige;
+    }
+  </style>
+  </textarea>
+  <br />
+  <br />
+</article>
+
+<article class = 'slide'>
+  <h2>Fun web things</h2>
+  <a href='http://lostworldsfairs.com' target='_blank'>Lost World's Fairs</a>
+  <br />
+  <a href='http://benthebodyguard.com/index.php' target='_blank'>Ben the Bodyguard</a>
+  <br />
+  <a href='http://webglsamples.googlecode.com/hg/spacerocks/spacerocks.html' target='_blank'>SpaceRocks</a>
+  <br />
+  <a href='http://webglsamples.googlecode.com/hg/aquarium/aquarium.html' target='_blank'>Google Aquarium</a>
+</article>
+
+<article class = 'slide'>
+  <h2>Play around!</h2>
+  <a href='practice.zip' target='_blank'>Download</a>
+  <p>See you next week :)</p>
+  <br />
+  <br />
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

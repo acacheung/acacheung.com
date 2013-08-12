@@ -1,0 +1,182 @@
+WEB 1
+
+annette / liz intro gdi
+
+who am i?
+  my name is amanda. i work for dockyard, which is the space that you are in . it is a design and development consultancy that works in ruby on rails  and ember.js.
+
+goals
+  get you comfortable with the basics
+
+how we're going to accomplish this
+  hands-on exercises
+
+there's a lot to learn!
+  HTML
+  CSS
+  JS
+  design layout fundamentals
+  typography
+  UI
+  content strategy
+  SEO
+
+for now let's just talk about HTML, CSS and JS
+  HTML - semantics, content, data
+  CSS - layout, styling
+  JS - interaction, dynamism altho some parts are now available in css3
+
+HTML = HTML is a markup language, which means you're annotating (marking up) plain text to give it structure and meaning, similar to the way you would underline or make notes in a book.
+
+show basic html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>My Web Page</title>
+      <link rel='stylesheet' href='style.css'>
+      <script src='jquery.min.js'></script>
+      <script src='application.js'></script>
+    </head>
+    <body>
+      <header id='site-header'>
+        <h1 class='logo'>My Awesome Website</h1>
+        <nav id='main-nav'>
+          <ul>
+            <li><a href='item1.html'>Item 1</a></li>
+            <li><a href='item2.html'>Item 2</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id='site-wrapper'>
+        <section id='site-content'>
+          <article>
+            <h1>Header</h1>
+            <p>Lorem Ipsum</p>
+          </article>
+        </section>
+      </div>
+      <footer id='site-footer'>
+        Copyright 2013. All rights reserved.
+      </footer>
+    </body>
+  </html>
+
+look at the code
+  tags come in pairs. start tag and end tag. open and close tag.
+  html tag = describes the web page and has links to assets, . is not visible content
+  body tag = visible page content
+  div tag = defines a division (like a container)
+  tags that are generic: div, span
+  tags that have semantic meaning: head, body, header, nav, section, article, footer, aside
+
+  head = meta info, links to external assets like css and js
+  header = logo, nav, search(maybe), etc
+  nav = links to other pages or to parts within the page
+  section = a group of content
+  article = self-contained piece of content
+  footer = footer for the section it applies to, doesn't have to mean the bottom of the page, but usually does
+
+  attributes = <element name = "value">
+  above anchor link goes to "value"
+  look at class and id
+  also <img src = "logo.png">
+
+dissect a few websites:
+  http://www.annapurnarecruitment.com/
+  http://www.chichesterdesign.co.uk/
+  http://littlelines.com/
+  http://aneventapart.com/
+
+best practices!
+  semantics, separate content from design which means don't put styles in your html
+  progressive enhancement
+  capabilities, not browsers
+  responsive design, beyond desktop view
+
+state of the art
+  Lost World's Fairs
+    http://lostworldsfairs.com
+  Ben the Bodyguard
+    http://benthebodyguard.com/index.php
+  SpaceRocks
+    http://webglsamples.googlecode.com/hg/spacerocks/spacerocks.html
+  Google Aquarium
+    http://webglsamples.googlecode.com/hg/aquarium/aquarium.html
+
+VALIDATOR
+http://validator.w3.org/
+
+
+
+
+WEB 2
+
+What is web design?
+  A list apart says: Web design is the creation of digital environments that facilitate and encourage human activity; reflect or adapt to individual voices and content; and change gracefully over time while always retaining their identity.
+
+  Wikipedia says: Web Design is the skill of creating presentations of content (usually hypertext or hypermedia) that is delivered to an end-user through the World Wide Web, by way of a Web browser or other Web-enabled software like Internet television clients, microblogging clients and RSS readers.
+
+Know your audience. who is going to be using your site? demographics.
+Know your content. design for an organic restaurant is going to be different than design for a college sports team
+Know your medium. Desktop, tablet, all?
+
+People recognize things on the web now. blue text with an underline = default link. button, @amandac, hi@amanda.com
+
+Where do you look to log in to a site? top right
+How do you go back to the home page? click on logo
+
+Things to avoid:
+  interior scroll bars. mouse scrolling all of a sudden doesn't scroll where you think
+  iframes.
+  auto-playing media
+
+
+
+
+WEB 3
+
+style = selector { property : value }
+declaration is everything inside the brackets
+
+class names prefixed with a period (.)
+id's prefixed with a pound sign (#)
+
+selector combinations. separate multiple by comma.
+
+pseudo classes
+  :hover, :visited, :active, :first-child
+
+there are shortcuts
+  ex. border: 1px solid red;
+
+the box model!
+  top right bottom left
+
+measurements: 0, px, em, %
+
+layout properties: margin, padding, width, height, border, position, float, clear, display, visibility, background, border-radius, box-shadow
+
+understanding floats and positioning: http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+cascading hierarchy: inline (please don't do this), !important (only use this when necessary), id, class, order of appearance,
+
+what i do:
+  start with reset, meyer reset so startint point is the same cross-browser
+  set base styles
+  set layout styles
+  set module styles
+
+centering things
+  margin-right: auto
+  margin-left: auto
+  chris coyier
+
+html5 shiv for non-modern browsers
+
+practice making a nav bar
+
+more design:
+  differentiation - different parts should look different
+  grouping - alike parts should be close together
+  hierarchy
+

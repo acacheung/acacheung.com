@@ -1,0 +1,10 @@
+.heart {
+  color: purple;
+  font-size: 2em;
+  transition-duration: .25s;
+  transition-property: color
+}
+
+.heart:hover {
+  color: red;
+}
