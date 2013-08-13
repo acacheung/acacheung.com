@@ -1,0 +1,77 @@
+SLIDE 1 - name, email, company website
+Hi everyone. My name is Amanda. I work as a designer and front end developer at DockYard, which is a design/dev shop in downtown Boston that uses Rails as their backend.
+
+SLIDE 2 - I am going to talk to all of you about the way I like to organize and write up my CSS for responsive websites.
+
+SLIDE 3 - picture of SMACSS book
+First off if you haven't read SMACSS by Jonathan Snook yet, it lays down a really good set of guidelines to follow. Some of the key takeaways from book are...
+
+SLIDE 4 - go over SMACSS rules
+1. Organize your CSS into Base, layout, module, state, and theme styles.
+2. Look for patterns and code them into reusable CSS properties
+3. Decouple styles from layout ***
+4. Naming conventions
+_____________________________________
+
+Base: things like your p font-size, link colors, link text-decoration, etc. In general, no id or class selectors go here. It's for your element defaults
+
+Layout: for styling major components like headers, footers, and sidebars. Layout styles are more positioning CSS and less style CSS if that makes sense. So if you're looking at a website and you blur your eyes, its the general sections you can make out. These are your higher level containers, where your grid system goes, mostly positioning styles like margins, paddings, and floats.
+
+Module: module styles are for styling minor components like calls to action, parts of forms, buttons. Here, I try my best not to be page specific so these styles can work within any layout container or another module. For example I have an aside.sass inside my modules directory, the aside can go on different pages and inside other containers by not being dependent on its parent container.
+
+State: is for styling different states of a certain module. for example an accordion can be in an expanded state or collapsed state. A nav can have a .is-dropped-down state or whatever. By changing its class name via javascript, these styles have a certain place to be written.
+
+Theme: is for theming sites with different colors and backgrounds for options but isn't always necessary in projects.
+
+
+I like to go with having one css file per module so it makes it easier to edit in the future because you know kinda where everything belongs unlike when I first started writing CSS and I had one long styles.css file and it would take me too long to know where to find what I was looking for in the document. Anyways it's up to you how you like it. One big css file, one file per module, some kind of folder structure, whatever you prefer.
+
+...
+
+Number two, naming conventions. SMACSS set some guidelines for how to name your classes according to what type of style they are. So base should use element selectors so just the p, anchor or h1. Layout comes with a .l dash in front of the module so we can recognize right away that it is a layout/ positioning style. Modules are normal classes. And states have a .is dash in front.
+
+...
+
+look for patterns and systems. These repeating patterns get coded into reusable css properties that follow a naming convention and are hopefully named according to their purpose rather than their visual appearance. When done really well, it can come to a point where you can add an element to your html with the classes it needs and it'll be automatically styled to exactly how you want it.
+
+...
+
+This number three here is very important! Smacss really enforces the importance of not coupling your styles with HTML. This means your styles should ideally be context-free and should not rely on the structure of HTML. If in the future, we re-order a few elements on the site, we don't want a bunch of our styles to break because we targeted things based on how it was nested in the HTML document. Don't use location-based css selectors and I would always prefer class selectors over child selectors because child selectors are dependent on HTML structure. To be more clear on this, it means:
+
+if I'm trying to target a link within a call to action that happens to be in an aside
+
+I could probably do something like this:
+aside div a
+
+but instead I would want to change it to something like this:
+.cta-link
+because then I could use the same styles on another call to action link even if it wasn't in an aside
+
+and it gets even better!
+.cta__link
+what is this you might ask?
+
+...
+
+this moves us to number 4
+I like to use BEM naming conventions, which was introduced by Yandex and stands for block element module. To read this goes like this:
+
+.block{}
+.block__element{}
+.block--modifier{}
+
+looks kinda weird when you see it at first, but once you get used to it you can tell more about a certain element just by looking at the class itself. I don't go too crazy with this stuff, but when a submodule always belongs inside a certain module, I like to use this naming convention
+
+to show an example, say I have a nav and I want extra emphasis on the Sign Up link
+the block would be
+.main-nav{}
+
+and each nav item could be
+.main-nav__item with the Sign Up link being
+.main-nav__item--signup
+
+
+
+DRY and code smells
+mobile first
+
