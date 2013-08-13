@@ -53,7 +53,7 @@ what is this you might ask?
 
 ...
 
-this moves us to number 4
+this moves us to some more naming conventions
 I like to use BEM naming conventions, which was introduced by Yandex and stands for block element module. To read this goes like this:
 
 .block{}
