@@ -98,13 +98,16 @@
 
 <article class='slide'>
   <h2>ID's vs Classes</h2>
+  <p>No spaces!</p>
+  <p>Recommendation: use dashes to separate words (for javascript, use camelcase)</p>
   <textarea class='coder-editor'>
   <!DOCTYPE html>
   <html>
     <h1 id='fun' class='fun' style='color: orange'>CSS is fun!</h1>
+    <p class='match'>Will this match the h1 styles?</p>
   </html>
   <style>
-    .fun {
+    .fun, .match {
       font-weight: bold;
       color: purple;
     }
@@ -141,7 +144,112 @@
 
 <article class='slide'>
   <h2>Font-family Fallbacks</h2>
-  
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <h1 class='logo'>Awesome Logo</h1>
+  </html>
+  <style>
+    .logo {
+      font-family: 'klinic slab', 'montserrat', helvetica, sans-serif;
+      font-size: 3em;
+      text-align: center;
+    }
+  </style>
+  </textarea>
+</article>
+
+<article class='slide'>
+  <h2>16px vs 1em vs 100%</h2>
+  <p>For more info, read <a href='http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/' target='_blank'>this blog post</a>
+  <br />
+  <br />
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <h1>Logo</h1>
+    <p>Mollit typewriter id roof party mixtape flannel. Raw denim cred cillum, disrupt 3 wolf moon blog nisi single-origin coffee selvage four loko occaecat craft beer non YOLO. Mumblecore qui Williamsburg, vero put a bird on it keffiyeh selvage id. Wes Anderson gastropub vero, viral pork belly enim mustache tempor actually scenester irure. Banjo blog selvage authentic. Seitan hashtag commodo, cardigan assumenda squid meh VHS retro pickled scenester single-origin coffee. Etsy quinoa id nihil seitan iPhone raw denim, commodo craft beer dolor skateboard banh mi cornhole.</p>
+  </html>
+  <style>
+    html {
+      font-size: 16px;
+      font-size: 10px;
+    }
+    p {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 3em;
+    }
+  </style>
+  </textarea>
+</article>
+
+<article class='slide'>
+  <h2>Add styles to our Trent Walton blog</h2>
+</article>
+
+<article class='slide'>
+  <h2>Positioning!</h2>
+  <p>Floats, overflow, display, padding, margin</p>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <div class='left'></div>
+    <div class='right'></div>
+  </html>
+  <style>
+
+  </style>
+  </textarea>
+</article>
+
+<article class='slide'>
+  <h2>Positioning reading</h2>
+  <a href='http://www.barelyfitz.com/screencast/html-training/css/positioning/' target='_blank'>BarelyFitz</a>
+  <br />
+  <a href='http://learnlayout.com/' target='_blank'>LearnLayout</a>
+</article>
+
+<article class='slide'>
+  <h2>The box model</h2>
+  <p><a href='http://css-tricks.com/the-css-box-model/' target='_blank'>In CSS, everything sits in a rectangular box</a></p>
+  <img class='box-model' src='images/boxmodel.gif' />
+</article>
+
+<article class='slide'>
+  <h2>CSS Positioning exercise</h2>
+  <p>Carry out the image below in <a href='http://jsbin.com/' target='_blank'>jsbin.com</a></p>
+  <img src='images/positioning.png' />
+</article>
+
+<article class='slide'>
+  <h2>Inline elements vs block elements</h2>
+  <p><em>Inline</em>: images, links, em, strong</p>
+  <p><em>Block</em>: p, h1, h2, ul, li, most things</p>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <a href='#'>This is a link</a>
+    <img class='logo' src='http://girldevelopit.com/assets/pink-logo.png' />
+    <em>This is emphasized text<span>This is a span inside an em tag</span></em>
+    <strong>This is strong text</strong>
+    <p>This is paragraph text. It is defaulted to display: block.</p>
+    <h1>This is a heading 1</h1>
+  </html>
+  <style>
+    .logo {
+      width: 350px;
+    }
+    span {
+      color: orange;
+    }
+  </style>
+  </textarea>
+</article>
+
+<article class='slide'>
+  <h2>The DIV element</h2>
 </article>
 
 <script src='dist/coderdeck.min.js'></script>

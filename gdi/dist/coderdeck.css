@@ -24,6 +24,10 @@ img {
   width: 300px;
 }
 
+.box-model {
+  width: 400px;
+}
+
 h2.gray {
   color: #737067 !important;
 }
