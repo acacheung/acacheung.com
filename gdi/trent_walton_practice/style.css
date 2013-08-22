@@ -1,0 +1,35 @@
+body {
+  background-color: #f5f5f5;
+}
+
+body {
+  color: #2f3438;
+}
+
+.nav-item {
+  color: #2f3438;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
+.nav-item:active {
+  color: purple;
+}
+
+.blog-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-link {
+  color: red;
+  text-decoration: none;
+  float: left;
+}
