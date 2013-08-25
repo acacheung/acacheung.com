@@ -60,14 +60,14 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
 </article>
 
 <article class='slide'>
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
 </article>
 
@@ -75,7 +75,7 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
   <p>How do you make a link open up another tab?</p>
 </article>
@@ -84,7 +84,7 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
   <p>How do you make a link open up another tab?</p>
   <p>What is the total width of a container that has width set to 50px and padding of 10px?</p>
@@ -94,7 +94,7 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
   <p>How do you make a link open up another tab?</p>
   <p>What is the total width of a container that has width set to 50px and padding of 10px?</p>
@@ -105,7 +105,7 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
   <p>How do you make a link open up another tab?</p>
   <p>What is the total width of a container that has width set to 50px and padding of 10px?</p>
@@ -117,7 +117,7 @@
   <h2>Review</h2>
   <p>How do you underline an element?</p>
   <p>What are the three ways to hook up styles to HTML? Which is recommended?</p>
-  <p>What do you do if you want all your text to be red, but no headlines to be red?</p>
+  <p>What can you do if you want all your text to be red, but no headlines to be red?</p>
   <p>How do you apply the same styles to multiple elements?</p>
   <p>How do you make a link open up another tab?</p>
   <p>What is the total width of a container that has width set to 50px and padding of 10px?</p>
@@ -127,18 +127,23 @@
 </article>
 
 <article class='slide'>
-  <h2>Inline elements vs block elements</h2>
-  <p><em>Inline</em>: images, links, em, strong</p>
+  <h2>Block elements vs inline elements</h2>
+  <img src='images/block-inline.png' class='practice'>
+</article>
+
+<article class='slide'>
+  <h2>Block elements vs inline elements</h2>
   <p><em>Block</em>: p, h1, h2, ul, li, most things</p>
+  <p><em>Inline</em>: images, links, em, strong</p>
   <textarea class='coder-editor'>
   <!DOCTYPE html>
   <html>
+    <p>This is paragraph text. It is defaulted to display: block.</p>
+    <h1>This is a heading 1</h1>
     <a href='#'>This is a link</a>
     <img class='logo' src='http://girldevelopit.com/assets/pink-logo.png' />
     <em>This is emphasized text<span>This is a span inside an em tag</span></em>
     <strong>This is strong text</strong>
-    <p>This is paragraph text. It is defaulted to display: block.</p>
-    <h1>This is a heading 1</h1>
   </html>
   <style>
     .logo {
@@ -153,12 +158,18 @@
 
 <article class='slide'>
   <h2>The DIV element</h2>
-  <p>Used to group elements to format them with CSS. Is not a semantic HTML element</p>
+  <p>Used to group elements to format them with CSS. Is not a semantic HTML element.</p>
 </article>
 
 <article class='slide'>
   <h2>The SPAN element</h2>
-  <p>Used to apply styles to text inline</p>
+  <p>Used to apply styles to text inline. Also not a semantic HTML element.</p>
+</article>
+
+<article class='slide'>
+  <h2>Display inline vs block vs inline-block</h2>
+  <p><a href='http://dustwell.com/div-span-inline-block.html'>Read this blog post</a></p>
+  <p>As you can see in the example, display: inline-block causes whitespace in between elements. Float left does not.</p>
 </article>
 
 <article class='slide'>
@@ -206,9 +217,7 @@
 
 <article class='slide'>
   <h2>Image file formats</h2>
-  <a href='http://stackoverflow.com/questions/2336522/png-vs-gif-vs-jpeg-when-best-to-use'>PNG vs GIF vs JPG</a>
-  <br />
-  <br />
+  <p>Blog post:  <a href='http://stackoverflow.com/questions/2336522/png-vs-gif-vs-jpeg-when-best-to-use'>PNG vs GIF vs JPG</a></p>
   <p><em>JPG:</em> best for large background images. Cannot hold transparency.</p>
   <p><em>PNG:</em> best for most use cases. Can hold transparency.</p>
   <p><em>GIF:</em> good for animations.</p>
@@ -222,6 +231,13 @@
   <p><em>Margin:</em> 2em auto;</p>
   <p><em>Font:</em> font-style font-variant font-weight font-size/line-height font-family;</p>
   <p><em>Font:</em> italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;</p>
+  <br>
+  <br>
+  <p><em>margin: 0</em> = all sides of the margin is zero</p>
+  <p><em>padding: 10px 20px</em> = top and bottom are 10px. Left and right are 20px.</p>
+  <p><em>border-width: 5px 8px 10px</em> = top is 5px, left and right is 8px, bottom is 10px.</p>
+  <p><em>padding: 3px 5px 7px 9px</em> = top is 3px, right is 5px, bottom is 7px and left is 9px. Mnemonic for TRBL is TRouBLe</p>
+
 </article>
 
 <article class='slide'>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Girl Develop It - Intro HTML and CSS</title>
+  <meta name="viewport" content="width=1024" />
+  <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css" />
+  <link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" />
+  <link rel="stylesheet" id='style-theme-link' href="dist/code-blocks.css" type="text/css" />
+
+  <script src='dist/jquery.min.js'></script>
+  <script src="dist/modernizr.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+      CODE
+    </body>
+</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+  <html>
+    <title>test</title>
+    <style>
+      CODE
+    </style>
+    <body>
+      <h1>I'm a H1 heading</h1>
+      <h2>I'm a H2 heading</h2>
+      <p>Pargraph of text &lt;p&gt; here</p>
+      <div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+      <div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+    </body>
+  </html>
+</script>
+
+<article class='slide slide-subhead'>
+  <h1>Intro to HTML &amp; CSS</h1>
+  <h2>Class 4</h2>
+</article>
+
+<article class='slide'>
+  <h2>Floats, clears and overflow</h2>
+  <p><a href='http://css-tricks.com/all-about-floats/' target='_blank'>Read this!</a></p>
+  <p>Often times, clears create an extra HTML element so a better solution is to do an overflow: auto. Overflow: hidden hides anything outside of container so some content may be hidden without you knowing. Overflow: scroll will create scrollbars whether they are needed or not. Refer to: <a href='http://www.quirksmode.org/css/clearing.html'>this blog post</a></p>
+</article>
+
+<article class='slide'>
+  <h2>Positioning practice</h2>
+  <img src='images/pugs-rock.jpg' class='practice'>
+</article>
+
+<article class='slide'>
+  <h2>Z-index</h2>
+  <p>To control order layer of elements.</p>
+  <p>Trick: Only works if you explicitly state position whether it be relative, absolute or fixed</p>
+  <p><a href='http://codepen.io/chriscoyier/pen/gboJf' target='_blank'>Fun example</a></p>
+  <p><a href='http://css-tricks.com/snippets/css/ribbon/' target='_blank'>More practical example</a></p>
+</article>
+
+<article class='slide'>
+  <h2>What is position: fixed?</h2>
+  <p>Keeps that element in that location even with scroll.</p>
+  <p><a href='http://wickedgoodruby.com/' target='_blank'>Example: Wicked Good Ruby Conf 2013</a></p>
+</article>
+
+<article class='slide'>
+  <h2>How to organize your CSS</h2>
+  <ol>
+    <li>CSS reset</li>
+    <li>Base styles</li>
+    <li>Layout styles</li>
+    <li>Module styles</li>
+  </ol>
+  <p><a href='http://slid.es/amandacheung/organizing-your-css-styles/fullscreen'>More on CSS organization</a></p>
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
