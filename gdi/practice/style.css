@@ -8,3 +8,33 @@
 .heart:hover {
   color: red;
 }
+
+.nav {
+  margin-right: auto;
+  margin-left: auto;
+  width: 437px;
+  overflow: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  background-color: lightgray;
+  float: left;
+  font-family: helvetica, sans-serif;
+}
+
+.nav-item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.nav-item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav-item:not(:last-child) {
+  border-right: 1px solid white;
+}
