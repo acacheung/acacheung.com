@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Girl Develop It - Responsive Web Design</title>
+	<meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+	<link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" >
+  <link rel="stylesheet" id='style-theme-link' href="dist/code-blocks.css" type="text/css" >
+
+	<script src='dist/jquery.min.js'></script>
+	<script src="dist/modernizr.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<p>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script>
+
+<article class='slide slide-subhead'>
+  <h1>Responsive Design</h1>
+  <h2>Class 1</h2>
+</article>
+
+<article class = 'slide'>
+  <h2>Welcome</h2>
+</article>
+
+<article class = 'slide'>
+  <h2>Welcome</h2>
+  <p>Introductions</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Welcome</h2>
+  <p>Introductions</p>
+  <p>Goals</p>
+</article>
+
+<article class = 'slide'>
+  <h2>What is responsive web design?</h2>
+  <p>Wikipedia says: Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors)</p>
+  <br>
+  <p>Here is an example of one:</p>
+  <a href='http://thegreatdiscontent.com/jessica-walsh'>The Great Discontent</a>
+</article>
+
+<article class = 'slide'>
+  <h2>What are other options?</h2>
+  <p>Fixed: set width, styles do not change depending on resize, no media queries</p>
+  <br />
+  <p>Fluid: built using percentages, no media queries</p>
+  <br />
+  <p>Adaptive: media queries to target specific devices (mobile, tablet, desktop)</p>
+  <br />
+  <p>Native app: can work without an internet connection, higher quailty UX</p>
+  <br />
+  <p>Separate mobile site: created only for small screens, lighter and faster</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Why do RWD?</h2>
+  <p>Write the code once and have it functional and legible across many devices.</p>
+  <p>People are using a wide range of devices to complete their tasks now. Reading on mobile phones, shopping on tablets, etc.</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Let's take a look at some more responsive sites</h2>
+  <p>What do they think about when implementing?</p>
+  <p>Play with the height and width of your browser to see what is happening</p>
+  <p>Did it make sense for the site to be built responsively?</p>
+  <br>
+  <a href='http://wickedgoodruby.com/'>Wicked Good Ruby</a>
+  <br>
+  <br>
+  <a href='http://tattly.com/'>Tattly</a>
+  <br>
+  <br>
+  <a href='http://builtbybuffalo.com/'>Built by Buffalo</a>
+</article>
+
+<article class = 'slide'>
+  <h2>Let's try it out!</h2>
+  <a href='http://jsbin.com/IyOSEho/1/edit'>Responsive demo</a>
+</article>
+
+<article class = 'slide'>
+  <h2>First exercise</h2>
+  <p>If you want to match perfectly, the font is Montserrat and the teal is #8affbf.</p>
+  <img src='images/exercise-01.png'>
+</article>
+
+<article class = 'slide'>
+  <h2>How I would do it</h2>
+  <p>Start mobile first</p>
+  <p>Move on to bigger widths slowly</p>
+</article>
+
+<article class = 'slide'>
+  <h2>How I would do it</h2>
+  <p>Start mobile first</p>
+  <p>Move on to bigger widths slowly</p>
+  <br>
+  <br>
+  <p>Why mobile first?</p>
+  <a href='http://colly.com/contact/'>Show more as we size up, not hide things when the screen gets more narrow. This is because mobile tends to have less bandwidth than devices with larger screen widths</a>
+</article>
+
+<article class = 'slide'>
+  <h2>Second exercise</h2>
+  <p>Get started on this and we will finish it up next class.</p>
+  <p>Copy taken from <a href='http://hipsteripsum.me/'>Hipster Ipsum</a></p>
+  <p>Images from <a href='http://placekitten.com/'>Place Kitten</a></p>
+  <p>Darker teal hex color: #7ce5a6</p>
+  <img src='images/exercise-02.png'>
+</article>
+
+<article class = 'slide'>
+  <h2>Reading</h2>
+  <a href='http://learn.shayhowe.com/advanced-html-css/responsive-web-design/'>Shay Howe's Lessons</a>
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

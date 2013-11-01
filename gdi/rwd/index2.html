@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Girl Develop It - Responsive Web Design</title>
+	<meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+	<link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" >
+  <link rel="stylesheet" id='style-theme-link' href="dist/code-blocks.css" type="text/css" >
+
+	<script src='dist/jquery.min.js'></script>
+	<script src="dist/modernizr.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<p>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script>
+
+<article class='slide slide-subhead'>
+  <h1>Responsive Design</h1>
+  <h2>Class 2</h2>
+</article>
+
+<article class = 'slide'>
+  <h2>Finish up second exercise</h2>
+  <img src='images/exercise-02.png'>
+</article>
+
+<article class = 'slide'>
+  <h2>Testing</h2>
+  <p>In the browser</p>
+  <p>iOS Simulator</p>
+  <p>On real devices</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Don't forget to include the meta tag for Apple devices</h2>
+  <p>&lt;meta content='width=device-width, minimum-scale=1.0, maximum-scale=1.0' name='viewport'&gt;</p>
+</article>
+
+<article class = 'slide'>
+  <h2>Design for responsive</h2>
+  <p>The argument against skeuomorphism: Don't fight the web, work with it!</p>
+  <p>No hover states for touch screens, so don't hide content that can only be viewed by hover</p>
+  <p>RWD trends and patterns (background cover images, fixed headers, infinite scroll)</p>
+  <a href='http://bradfrost.github.io/this-is-responsive/'>Brad Frost's Resources</a>
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
