@@ -20,6 +20,11 @@ img {
   width: 80%;
 }
 
+.image--small {
+  float: left;
+  width: 30%;
+}
+
 .gdi-logo {
   width: 300px;
 }
