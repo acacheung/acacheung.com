@@ -1,168 +1,125 @@
-<!DOCTYPE html>
-
-<html>
-
-
-
-<head>
-
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
     <title>Amanda Cheung</title>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta name="Description" content="Portfolio website of Amanda Cheung">
-  <meta name="Keywords" content="Amanda Cheung, graphic design, illustration, logo, branding, brand identity, packagaging web design, website, fine arts, painting, custom shoes, political cartoons, projects.">
-  <meta name="robots" content="all">
-    <LINK href="style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="flexslider.css" type="text/css">
-  <link rel="stylesheet" href="css/screen.css" media="screen" />
-  
-</head>
-<body>
-
-
-<div id="content">
-
-<header id="site-header">
-  <img class="logo" alt="Amanda Cheung" src="images/logo.png">    
-
-
-  <p id="top">design + fine arts</p>
-
-
-</header>
-
-<img class="lead" alt="Erykah in Palimpsest" src="images/lead.jpg"> 
-
-<div id="about_me">
-  <p id="bio">Hello, my name is Amanda Cheung. I am a designer / painter based in Boston. Here you can view samples of my work. If you would like to contact me, please email me at <span><a href="mailto:acacheung@gmail.com?Subject=Portfolio%20Inquiry">acacheung&#064;gmail.com</a></span>.</p>
-  <div id="panda"></div>
-  <br>
-</div>
-
-
-
-<div id="ribbon">
-  <img alt="Amanda Cheung's Portfolio" src="images/ribbon.png">
-  <ul id="content-nav">
-    <li><a href="index.html#panda">&#8226; Design &#8226;</a>
-    <li><a href="art.html#panda">&#8226; Art &#8226;</a>
-    <li><a href="misc.html#panda">&#8226; Misc &#8226;</a>
-  </ul>
-</div>
-
-<article class="work">
-  <div class="work-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="images/treat/treat_1.jpg" alt="Treat Yourself Boston" /></li>
-        <li><img src="images/treat/treat_2.jpg" alt="Treat Yourself Boston" /></li>
-        <li><img src="images/treat/treat_3.jpg" alt="Treat Yourself Boston" /></li>
-        <li><img src="images/treat/treat_4.jpg" alt="Treat Yourself Boston" /></li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="details">
-      <h1>Treat Yourself</h1>
-      <h2>Logo, website, and more!</h2>
-      <p>Treat Yourself is a cupcake and dessert catering company that serves the Greater Boston area. Here is a presentation containing some of their marketing materials. Items range from business cards to cake boxes and t-shirts.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="build/styles.css">
+  </head>
+  <body>
+    <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="medium" viewBox="0 0 38 32">
+          <path d="M37.693 5.856c-0.007-0.005-0.012-0.015-0.023-0.019l-0.012-0.007-11.404-5.704c-0.078-0.038-0.159-0.065-0.24-0.084-0.104-0.027-0.208-0.043-0.315-0.043-0.436 0-0.871 0.219-1.106 0.6l-6.566 10.673 8.239 13.391 11.462-18.624c0.038-0.063 0.020-0.138-0.035-0.182z"></path>
+          <path d="M14.409 8.84v12.147l10.797 5.397z"></path>
+          <path d="M26.828 27.197l8.886 4.444c1.156 0.577 2.093 0.171 2.093-0.903v-21.384l-10.979 17.844z"></path>
+          <path d="M12.535 5.872l-11.14-5.569c-0.2-0.101-0.392-0.147-0.566-0.147-0.487 0-0.829 0.375-0.829 1.009v24.051c0 0.644 0.473 1.406 1.046 1.693l9.811 4.907c0.252 0.126 0.49 0.185 0.708 0.185 0.609 0 1.037-0.473 1.037-1.264v-24.756c0-0.047-0.026-0.088-0.068-0.109z"></path>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 39 32">
+          <path d="M12.385 32c14.861 0 22.989-12.312 22.989-22.99 0-0.35 0-0.698-0.024-1.045 1.581-1.142 2.947-2.558 4.031-4.181-1.474 0.654-3.039 1.083-4.64 1.271 1.686-1.010 2.949-2.598 3.551-4.468-1.585 0.941-3.321 1.605-5.131 1.962-3.060-3.253-8.177-3.411-11.432-0.352-2.098 1.973-2.989 4.914-2.338 7.72-6.496-0.326-12.549-3.395-16.651-8.443-2.145 3.692-1.049 8.415 2.502 10.786-1.287-0.038-2.544-0.385-3.668-1.011 0 0.034 0 0.068 0 0.103 0 3.845 2.712 7.159 6.482 7.92-1.19 0.323-2.437 0.373-3.648 0.139 1.058 3.291 4.091 5.546 7.549 5.61-2.861 2.249-6.395 3.47-10.034 3.466-0.643-0.001-1.286-0.039-1.924-0.115 3.695 2.371 7.994 3.627 12.385 3.622z"></path>
+        </symbol>
+        <symbol id="github" viewBox="0 0 32 32">
+          <path d="M15.999 0.395c-8.834 0-15.999 7.163-15.999 16.001 0 7.069 4.585 13.065 10.943 15.181 0.8 0.147 1.091-0.347 1.091-0.771 0-0.379-0.014-1.385-0.022-2.72-4.451 0.967-5.39-2.145-5.39-2.145-0.727-1.849-1.776-2.341-1.776-2.341-1.453-0.994 0.11-0.974 0.11-0.974 1.606 0.114 2.451 1.648 2.451 1.648 1.427 2.446 3.745 1.739 4.657 1.329 0.145-1.034 0.558-1.738 1.016-2.139-3.553-0.403-7.288-1.776-7.288-7.907 0-1.745 0.623-3.175 1.646-4.294-0.165-0.402-0.713-2.029 0.157-4.232 0 0 1.343-0.43 4.4 1.641 1.277-0.355 2.645-0.533 4.006-0.539 1.359 0.007 2.728 0.184 4.006 0.539 3.055-2.071 4.397-1.641 4.397-1.641 0.873 2.203 0.323 3.83 0.159 4.234 1.025 1.119 1.645 2.547 1.645 4.294 0 6.146-3.741 7.499-7.306 7.896 0.575 0.494 1.087 1.47 1.087 2.962 0 2.139-0.021 3.866-0.021 4.39 0 0.427 0.288 0.927 1.101 0.769 6.352-2.121 10.933-8.114 10.933-15.179 0-8.838-7.165-16.001-16.001-16.001z"></path>
+        </symbol>
+        <symbol id="email" viewBox="0 0 32 32">
+          <path d="M0 18.341c0-8.992 5.734-18.285 18.325-18.285 10.266 0 13.675 6.557 13.675 11.878 0 7.047-3.784 11.354-8.955 11.354-3.933 0-4.534-2.321-4.534-2.321h-0.376c-0.411 0.634-1.646 2.096-4.534 2.096-3.11 0-5.321-2.175-5.321-5.734 0-4.983 3.299-7.832 7.231-7.832 2.175 0 3.186 0.826 3.638 1.537l0.787-1.2h3.221l-0.973 6.821c-0.226 1.499 0.411 2.287 1.795 2.287 1.986 0 3.597-1.837 3.597-6.334 0-4.91-2.959-8.431-9.818-8.431-8.129 0-13.413 5.695-13.413 13.638 0 5.997 3.598 10.007 10.079 10.007 3.822 0 6.034-1.122 6.034-1.122l1.234 3.634c0 0-2.36 1.611-7.832 1.611-9.888-0.001-13.861-6.446-13.861-13.605zM15.927 13.733c-1.537 0-2.699 1.2-2.699 2.886 0 1.311 0.75 2.21 1.986 2.21 1.835 0 2.697-1.386 2.697-3.034 0-1.239-0.634-2.062-1.984-2.062z"></path>
+        </symbol>
+        <symbol id="heart" viewBox="0 0 32 32">
+          <path d="M31.656 8.275c-1.065-3.838-4.583-6.518-8.553-6.518-0.344 0-0.691 0.022-1.031 0.063-3.529 0.429-5.243 2.353-6.072 3.984-0.826-1.631-2.542-3.555-6.071-3.984-0.301-0.037-0.595-0.057-0.877-0.063-0.051-0.001-0.103-0.001-0.154-0.001-3.973 0-7.491 2.68-8.555 6.519-0.585 2.109-0.711 5.539 2.011 9.915 2.581 4.15 7.125 8.199 13.504 12.037 0.029 0.017 0.064 0.022 0.096 0.014 0.017-0.005 0.031-0.013 0.045-0.024 0.014 0.011 0.029 0.019 0.046 0.024 0.010 0.003 0.022 0.003 0.032 0.003 0.023 0 0.043-0.005 0.063-0.017 6.381-3.837 10.925-7.887 13.505-12.037 2.723-4.377 2.597-7.808 2.011-9.915z"></path>
+        </symbol>
+        <symbol id="hello" viewBox="0 0 23 32">
+          <path d="M22.35 24.292c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766c-0.43 0-0.766-0.336-0.766-0.766s0.336-0.776 0.766-0.776z"></path>
+          <path d="M19.267 30.458c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766c-0.43 0-0.766-0.336-0.766-0.766s0.336-0.776 0.766-0.776z"></path>
+          <path d="M16.954 24.292c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.765-0.776 0.765c-0.43 0-0.766-0.336-0.766-0.765s0.336-0.776 0.766-0.776z"></path>
+          <path d="M14.117 30.458c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766c-0.43 0-0.766-0.336-0.766-0.766s0.336-0.776 0.766-0.776z"></path>
+          <path d="M11.558 24.292c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766-0.766-0.336-0.766-0.766 0.336-0.776 0.766-0.776z"></path>
+          <path d="M8.999 30.458c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766c-0.43 0-0.766-0.336-0.766-0.766s0.336-0.776 0.766-0.776z"></path>
+          <path d="M6.162 24.292c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.765-0.776 0.765c-0.43 0-0.766-0.336-0.766-0.765s0.336-0.776 0.766-0.776z"></path>
+          <path d="M3.849 30.458c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.766-0.776 0.766c-0.43 0-0.766-0.336-0.766-0.766s0.336-0.776 0.766-0.776z"></path>
+          <path d="M0.766 24.292c0.43 0 0.776 0.346 0.776 0.776s-0.346 0.765-0.776 0.765c-0.43 0-0.766-0.336-0.766-0.765s0.336-0.776 0.766-0.776z"></path>
+          <path d="M0.776 7.708c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766c0.43 0 0.766 0.336 0.766 0.766s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M3.86 1.541c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766c0.43 0 0.766 0.336 0.766 0.766s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M6.172 7.708c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.765 0.776-0.765c0.43 0 0.766 0.336 0.766 0.765s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M9.010 1.541c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766c0.43 0 0.766 0.336 0.766 0.766s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M11.568 7.708c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766c0.43 0 0.766 0.336 0.766 0.766s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M14.127 1.541c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766c0.43 0 0.766 0.336 0.766 0.766s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M16.964 7.708c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.765 0.776-0.765c0.43 0 0.766 0.336 0.766 0.765s-0.336 0.776-0.766 0.776z"></path>
+          <path d="M19.277 1.541c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.766 0.776-0.766 0.765 0.336 0.765 0.766c0 0.43-0.336 0.776-0.765 0.776z"></path>
+          <path d="M22.36 7.708c-0.43 0-0.776-0.346-0.776-0.776s0.346-0.765 0.776-0.765c0.43 0 0.766 0.336 0.766 0.765s-0.336 0.776-0.766 0.776z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <header class="header">
+      <h1 class="logo">
+        <span>Amanda</span>
+        Cheung
+      </h1>
+      <nav class="nav__links">
+        <a class="nav__link" href="https://medium.com/@acacheung">
+          <span class="nav__link__copy">Blog</span>
+          <svg class="nav__link__svg"><use xlink:href="#medium"></svg>
+        </a>
+        <a class="nav__link" href="https://twitter.com/acacheung">
+          <span class="nav__link__copy">Twitter</span>
+          <svg class="nav__link__svg"><use xlink:href="#twitter"></svg>
+        </a>
+        <a class="nav__link" href="https://github.com/acacheung">
+          <span class="nav__link__copy">GitHub</span>
+          <svg class="nav__link__svg"><use xlink:href="#github"></svg>
+        </a>
+        <a class="nav__link" href="mailto:acacheung@gmail.com">
+          <span class="nav__link__copy">Email</span>
+          <svg class="nav__link__svg"><use xlink:href="#email"></svg>
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="hello">
+        <span class="hello__copy">Hello!</span>
+        <svg><use xlink:href="#hello"></svg>
       </div>
-    </div>
-  </div>
-</article>
-
-<article class="work">
-  <div class="work-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="images/house/house_1.jpg" alt="A House Divided" /></li>
-        <li><img src="images/house/house_2.jpg" alt="A House Divided" /></li>
-        <li><img src="images/house/house_3.jpg" alt="A House Divided" /></li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="details">
-      <h1>A House Divided</h1>
-      <h2>Illustration, and editorial spread</h2>
-      <p>An editorial spread for an article about the wage gap between men and women in America. This was featured in Equilibrium, the University of Wisconsin - Madison&#39;s Economics Student Association magazine.</p>
+      <p class="intro">
+        My name is Amanda and I’m a front-end designer&nbsp;/ developer based in Boston. I am currently teaching web design at
+        <a class="t-link" href="http://www.massart.edu/">MassArt</a>
+        and I am open to the right opportunities for contract work.
+      </p>
+      <div class="t-body">
+        <p>I’m interested in bettering user experience through designer-developer collaboration as well as the intersection of art, design and coding. Sometimes I speak about these topics at conferences. My past presentations include:</p>
+        <ul>
+          <li>
+            <a href="http://slides.com/amandacheung/bridging-the-gap">Bridging the gap between designers and developers</a>
+          </li>
+          <li>
+            <a href="http://slides.com/amandacheung/responsible-data-viz-v2">Responsible data visualization</a>
+          </li>
+          <li>
+            <a href="http://slides.com/amandacheung/styling-forms-accessibly">Styling forms accessibly</a>
+          </li>
+        </ul>
+        <p>
+          <a href="mailto:acacheung@gmail.com">Contact me</a>
+          if you would like me to speak at your event. I believe in education to empower people within and those finding their way into the wonderful world of the web. To push forward initiatives of mentorship and community building, I also teach classes with
+          <a href="https://www.girldevelopit.com">Girl Develop It</a>
+          and co-organize the monthly
+          <a href="http://www.meetup.com/Boston-CSS">Boston CSS Meetup</a>.
+        </p>
+        <p>
+          Previously, I was the lead user experience developer at
+          <a href="https://dockyard.com">DockYard</a>.
+          During my time there, I worked with
+          <a href="http://www.nasdaq.com">NASDAQ</a>,
+          <a href="http://www.mheducation.com">McGraw-Hill Education</a>,
+          <a href="https://www.ideo.com">IDEO</a>,
+          <a href="https://www.bioventusglobal.com">Bioventus</a>
+          and more. One of the most interesting projects I had the opportunity to work on was the redesign of
+          <a href="https://rubygems.org">RubyGems</a>,
+          the open source gem hosting service to over a hundred thousand Ruby programs and libraries. Its daily traffic meant performance was a priority and its user-generated content meant the implementation of the design had to be flexible. Do you have interesting problems you would like to collaborate on? I’m taking on new projects!
+          <a href="mailto:acacheung@gmail.com">Get in touch</a>
+          if you think we would work well together.
       </div>
-    </div>
-  </div>
-</article>
-
-<article class="work">
-  <div class="work-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="images/lk/lk_1.jpg" alt="LK Essentials" /></li>
-        <li><img src="images/lk/lk_2.jpg" alt="LK Essentials" /></li>
-        <li><img src="images/lk/lk_3.jpg" alt="LK Essentials" /></li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="details">
-      <h1>LK Essentials</h1>
-      <h2>Logo, business card, and packaging</h2>
-      <p>LK Essentials is a natural skincare line by Lisa Kahan that emphasizes the importance of organic and pure products. Here is a proposed logo and business card concept.</p>
-      </div>
-    </div>
-  </div>
-</article>
-
-<article class="work">
-  <div class="work-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="images/sew/sew_1.jpg" alt="Sew and the City" /></li>
-        <li><img src="images/sew/sew_2.jpg" alt="Sew and the City" /></li>
-        <li><img src="images/sew/sew_3.jpg" alt="Sew and the City" /></li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="details">
-      <h1>Sew and the City</h1>
-      <h2>Logo, poster, and packaging</h2>
-      <p>Sew and the City is an imagined sewing products line. Included in this project are the implemented packaging designs as well as a promotional poster that describes the targeted market.</p>
-      </div>
-    </div>
-  </div>
-</article>
-
-<article class="work">
-  <div class="work-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="images/csp/csp_1.jpg" alt="Cold Spring Park" /></li>
-        <li><img src="images/csp/csp_2.jpg" alt="Cold Spring Park" /></li>
-        <li><img src="images/csp/csp_3.jpg" alt="Cold Spring Park" /></li>
-      </ul>
-    </div>
-    <div class="box">
-      <div class="details">
-      <h1>Cold Spring Park</h1>
-      <h2>Logo, and website</h2>
-      <p>Cold Spring Park is located in Newton, MA. The main goal of this website is to restore and enhance the park as well as attract more community-oriented activities to the park.</p>      
-      </div>
-    </div>
-  </div>
-</article>
-
-<section id='copyright'><p>&copy; 2013 Amanda Cheung. All Rights Reserved.</p></section>
-
-</div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="jquery.flexslider.js"></script>
-  <script type="text/javascript" charset="utf-8">
-      $(window).load(function() {
-      $('.flexslider').flexslider();
-      });
-  </script>
-
-
-</body>
+      <footer class="footer">
+        <svg><use xlink:href="#heart"></svg>
+      </footer>
+    </main>
+  </body>
 </html>
-
-
-
-      
-
-   
