@@ -3,10 +3,25 @@ html, body, div, h1, h2, p, ul {
   padding: 0;
 }
 
+.l-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
 .masthead {
   background-color: #8affbf;
   border-bottom: 8px solid #7ce5a6;
   text-align: center;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.column {
+  margin-bottom: 30px;
+  line-height: 1.33;
 }
 
 @media (max-width: 859px) {
@@ -21,47 +36,20 @@ html, body, div, h1, h2, p, ul {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-}
 
-.masthead__heading, .masthead__subheading {
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
-}
-
-@media (min-width: 860px) {
   .masthead__heading {
     font-size: 60px;
   }
-}
 
-@media (min-width: 860px) {
   .masthead__subheading {
     font-size: 32px;
   }
-}
 
-.masthead__heading {
-  margin-bottom: 10px;
-}
-
-.main {
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
-}
-
-.column {
-  margin-bottom: 30px;
-  line-height: 1.33;
-}
-
-@media (min-width: 860px) {
   .column {
     width: 30%;
     float: left;
   }
+
   .column:not(:last-child) {
     margin-right: 5%;
   }
