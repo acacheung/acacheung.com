@@ -23,12 +23,12 @@ body {
   font-size: 18px;
   font-family: "BrandonTextWeb-Regular", sans-serif;
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   body {
     padding: 26px;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   body {
     padding: 12px;
   }
@@ -39,12 +39,12 @@ a {
   color: initial;
 }
 
-@media (max-width: 779px) and (max-height: 459px) {
+@media (max-width: 899px) and (max-height: 459px) {
   .header {
     position: absolute;
   }
 }
-@media (max-width: 779px) and (min-height: 460px) {
+@media (max-width: 899px) and (min-height: 460px) {
   .header {
     position: fixed;
   }
@@ -55,7 +55,7 @@ a {
   font-family: "ArquitectaBlack", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .logo {
     padding: 10px 4px;
     width: 20px;
@@ -71,7 +71,7 @@ a {
     display: block;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .logo {
     padding: 14px 20px 10px;
     display: inline-block;
@@ -81,7 +81,7 @@ a {
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .nav__links {
     float: right;
   }
@@ -90,7 +90,7 @@ a {
 .nav__link {
   float: left;
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .nav__link {
     margin-left: 28px;
     position: relative;
@@ -103,7 +103,7 @@ a {
     display: block;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .nav__link {
     padding: 5px 10px;
     clear: left;
@@ -113,13 +113,13 @@ a {
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .nav__link__svg {
     height: 16px;
     width: 16px;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .nav__link__svg {
     position: absolute;
     top: 16px;
@@ -132,12 +132,12 @@ a {
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .nav__link__copy {
     letter-spacing: 2px;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .nav__link__copy {
     position: absolute !important;
     height: 1px;
@@ -153,7 +153,7 @@ a {
   margin-left: auto;
   max-width: 540px;
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .main {
     padding-left: 52px;
   }
@@ -163,13 +163,13 @@ a {
   position: relative;
   text-align: center;
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .hello {
     padding-top: 190px;
     padding-bottom: 176px;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .hello {
     padding-top: 96px;
     padding-bottom: 90px;
@@ -182,12 +182,12 @@ a {
   letter-spacing: 9px;
   z-index: 1; /* To make text more easily selectable */
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .hello__copy {
     font-size: 60px;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .hello__copy {
     font-size: 42px;
   }
@@ -200,26 +200,26 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .hello svg {
     height: 180px;
     width: 136px;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .hello svg {
     height: 132px;
     width: 100px;
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .intro {
     font-size: 30px;
     line-height: 1.55;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .intro {
     font-size: 20px;
     line-height: 1.8;
@@ -242,12 +242,12 @@ a {
 }
 
 
-@media (min-width: 780px) {
+@media (min-width: 900px) {
   .t-link:hover {
     box-shadow: inset 0 -3px white, inset 0 -6px currentColor;
   }
 }
-@media (max-width: 779px) {
+@media (max-width: 899px) {
   .t-link:hover {
     box-shadow: inset 0 -1px white, inset 0 -3px currentColor;
   }
